@@ -1,0 +1,14 @@
+{
+  "name": "react-with-typescript",
+  "version": "1.0.0",
+  "description": "it is for learning react with typescript",
+  "main": "no-typescript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aadil42",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.1.6"
+  }
+}
