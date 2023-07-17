@@ -41,3 +41,12 @@ let people: {
   name: string;
   age: number;
 }[];
+
+
+// type inefernce.
+// basically ts will make the type for the variable automatically.
+
+let name1 = 'some string';
+
+// this will give errror saying type number is not assignable to type string.
+// name1 = 5
