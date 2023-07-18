@@ -47,3 +47,24 @@ person = {
 // };
 
 let people: Person[];
+
+
+// infered return typeis number. you can set it to be multiple types
+function somefunc(a: number,b: number) {
+  return a + b;
+}
+
+// here the return type can be number or string.
+function somefunc1(a: number, b:number): number | string {
+  return a + b;
+}
+
+// generics.
+function insertAtStart<T>(arr: T[], val: T) {
+  return [val, ...arr];
+}
+
+const numArr = [1,2,3];
+const updatedArr = insertAtStart(numArr, 0);
+
+// updatedArr[0].slice(0)
