@@ -21,12 +21,21 @@ isInstructor = true;
 let hobbies: string[];
 
 hobbies = ['Sports', 'Cooking'];
+// type inefernce.
+// basically ts will make the type for the variable automatically.
 
-let person: {
+let name1: string | number = 'some string';
+
+// this will give errror saying type number is not assignable to type string.
+// name1 = 5
+
+
+type Person = {
   name: string;
   age: number;
 };
 
+let person: Person;
 
 person = {
   name: 'Max',
@@ -37,16 +46,4 @@ person = {
 //   isEmployee: true
 // };
 
-let people: {
-  name: string;
-  age: number;
-}[];
-
-
-// type inefernce.
-// basically ts will make the type for the variable automatically.
-
-let name1 = 'some string';
-
-// this will give errror saying type number is not assignable to type string.
-// name1 = 5
+let people: Person[];
